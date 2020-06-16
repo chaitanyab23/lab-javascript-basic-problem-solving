@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopy Loops</title>
+    <script src="app.js"></script>
+    <script>
+        //progression 1//
+        var Prograd1 = "Chaitanya";
+        console.log("The Driver Name is " + Prograd1)
+        var Prograd2 = "Sandeep";
+        console.log("The navigator name is " + Prograd2)
+
+
+
+        //progression 2.1//
+        if (Prograd1.length > Prograd2.length) {
+            console.log(`The Driver has Longest Name, it has ${Prograd1.length}characters`)
+        } else if (Prograd1.length < Prograd2.length) {
+            console.log(`It seems that Navigator has Longest name ${Prograd.length} characters`)
+        } else {
+            console.log(`Wow, you both have equally long names,${Prograd1.length}characters! `)
+        }
+
+
+
+        //progression 2.2//
+        function vowcnt(vow) {
+            let vlist = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'];
+            let vcount = 0;
+            for (var i = 0; i < vow.length; i++) {
+                if (vlist.indexOf(vow[i]) !== -1) {
+                    vcount += 1;
+                }
+            }
+            return vcount;
+        }
+
+
+
+        //progression 2.3//
+
+        let upper = 0;
+        let lower = 0;
+
+        function count(string) {
+            for (var i = 0; i < string.length; i++) {
+                if (string[i] >= 'A' && string[i] <= 'Z')
+                    upper++;
+                else if (string[i] >= 'a' && string[i] <= 'z')
+                    lower++;
+            }
+            console.log("upper case are" + string + ":" + upper);
+            console.log("lower case are " + string + ":" + lower);
+        }
+
+        count(Prograd1);
+
+        //Progression 3.1//
+
+        Prograd1 = Prograd1.toUpperCase();
+        for (var i = 0; i < Prograd1.length; i++) {
+            console.log(Prograd1[i] + " ")
+        }
+
+        //progression 3.2//
+
+        function reverse(r) {
+            let reverse = "";
+            for (var i = r.length - 1; i >= 0; i--) {
+                reverse += r[i];
+            }
+            return reverse
+        }
+        console.log(reverse(Prograd1))
+
+
+
+        //progression 3.3//
+        let a = Prograd1.localeCompare(Prograd2);
+        let b = Prograd2.localeCompare(Prograd1);
+        if (a < b) {
+            console.log("Lexicographic\n" + Prograd1);
+        } else {
+            cconsole.log("Lexicographic\n" + Prograd2);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
